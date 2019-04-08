@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class ProjectConfig {
 
     @Bean
+    //@Scope("prototype")
     public Cat cat(){
         Cat c = new Cat();
         c.name = "Tom";
