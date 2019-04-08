@@ -9,3 +9,11 @@ maven: management biblioteci (dependinte)
 	-este un tool de build
 	-ruleaza teste unitare
 artefact = aplicatia in sine = executabilul care rezulta
+
+Spring framework:
+	un enterprise framework 
+
+bean = instanta din interiorul contextului
+
+
+!!!punere in context -> @Bean
