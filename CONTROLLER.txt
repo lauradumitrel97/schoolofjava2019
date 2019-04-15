@@ -1,0 +1,32 @@
+SPRING BOOT : start.spring.io
+
+@Controller
+=> ResponseEntity
+@RequestMapping(path = "/mypath", method) unde method = GET POST PUT SAU DELETE
+
+http://localhost:8080/mypath
+
+HTTP STATUS:
+2xx - ok
+4xx - erori client
+5xx - erori server
+
+@PathVariable(name="name") String name
+
+
+@RequestBody din json -> obiect java
+
+POST: POSTMAN : http://localhost:8080/mypost
+
+adnotare @RestController -> varianta imbunatatita 
+
+Controller -> Service -> Repository
+
+
+//pentru card -> sa aiba o lista de tranzactii => obiect tranzatie care are suma + magazin
+		Pentru un card sa avem in card repository, service, controller sa avem functionalitatea de 
+			-getTranzaction
+			-addTranzaction
+Pentru tranzactie: repo/service/controller -> List<> in care sa facem update-uri (lista instantiata aici) - endpoint de update(put, patch) + delete
+
+4 ENDPOINTURI : GET POST PUT DELETE 
