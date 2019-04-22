@@ -1,0 +1,30 @@
+database = o colectie de tabele-> schema
+
+create table dept (
+id number(2),
+name varchar2(40),
+constraint pk_dept primary key(id));
+
+describe dept
+
+create table emp (
+id number(2),
+name varchar2(40),
+age number(3),
+id_dep number(2),
+constraint pk_emp primary key(id),
+constraint fk_id_dep foreign key(id_dep) references dept(id));
+
+insert into dept values(1, 'NETS');
+insert into dept(id, name) values(2, 'ACCOUNTING');
+
+insert into emp values(1, 'Gigel', 30, 1);
+insert into emp values(2, 'Aurel', 30, 1);
+insert into emp values(3, 'Costel', 30, 1);
+
+select *
+from dept
+	left join emp
+		on dept.id = emp.id_dep;
+
+tranzactie 
