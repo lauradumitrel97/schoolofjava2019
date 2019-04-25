@@ -1,0 +1,6 @@
+jpa = java persistence api
+
+cruderepository
+jpa repository
+
+jpql -> query uri
