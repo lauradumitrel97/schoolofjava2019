@@ -1,0 +1,5 @@
+shift click drepta :  power shell
+bin\activemq start
+
+
+kafka-> tema
