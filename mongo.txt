@@ -1,0 +1,6 @@
+microserviciu in aplicatia cu movies-mongo
+
+fiecare microserviciu are o baza de date separata!!!
+sa adaugam o parte de user_register (login)
+
+din movie controller sa acceseze o lista de filme
