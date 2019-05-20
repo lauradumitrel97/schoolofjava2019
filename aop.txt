@@ -1,0 +1,38 @@
+aop = aspect oriented programmy
+
+interceptori = se declanseaza o portiune de cod la cerere
+
+join pointcut : punct in program unde vrem sa facem o modificare
+
+@Pointcut(expresie)  unde expresie = join pointcat
+
+identificator_de_acces   *=generic/void/int/..  nume_pachet(*=pachetul curent).nume_clasa.nume_metoda(..)
+.. = in cazul in care metoda are parametrii
+sau: (String, Integer)
+
+ex.:
+@Pointcut(expresie)
+public void searchMethods(){}
+
+Unde sa adauge ce vrem:
+@Before(pointcut) / @Before("...expresie_propriu-zisa")
+
+ex.: @Before(value = searchMethods)
+
+@After(pointcut)
+public void after(JoinPoint jp){
+	syso(jp.getMethod() + jp.getArgument());
+}
+
+@Around(pointcat)
+public void around(ProceedJoinPoint pjp) {
+	syso(before)
+	p.proceed();
+	syso(after)
+}
+
+
+@Aspect : clasa de definire
+
+
+
